@@ -1,0 +1,12 @@
+# build / test artifacts
+.artifacts/
+tests/.artifacts/
+evidence/artifacts/
+
+# chrome temp/profile dir
+.chrome-tmp/
+
+# screenshots / reports produced in-place
+screenshot-*.png
+axe-*.json
+lighthouse-*.json
