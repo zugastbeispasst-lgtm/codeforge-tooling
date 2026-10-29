@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>axe violation fixture</title></head>
+<body>
+  <main>
+    <h1>Known axe violation</h1>
+    <!-- DELIBERATE: <a> must not be a direct child of <ul> -> axe rule "list" -->
+    <ul>
+      <a href="#">direct anchor child (should be wrapped in &lt;li&gt;)</a>
+    </ul>
+  </main>
+</body>
+</html>

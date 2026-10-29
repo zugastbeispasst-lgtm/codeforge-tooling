@@ -1,0 +1,16 @@
+[browser-check] axe file:///home/adam/codeforge/tooling/tests/fixtures/violation.html (axe-core/cli@4.10.2)
+Running axe-core 4.10.3 in chrome-headless
+
+Testing file:///home/adam/codeforge/tooling/tests/fixtures/violation.html ... please wait, this may take a minute.
+
+  Violation of "list" with 1 occurrences!
+    Ensure that lists are structured correctly. Correct invalid elements at:
+     - ul
+    For details, see: https://dequeuniversity.com/rules/axe/4.10/list
+
+1 Accessibility issues detected.
+Testing complete of 1 pages
+
+Saved file at /home/adam/codeforge/tooling/evidence/artifacts/axe-tests-fixtures-violation.html.json 
+
+[browser-check] axe report -> /home/adam/codeforge/tooling/evidence/artifacts/axe-tests-fixtures-violation.html.json (exit 1)

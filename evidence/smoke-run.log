@@ -1,0 +1,26 @@
+== 1. chrome smoke ==
+  [32mPASS[0m chrome --version (exit 0)
+    CHROME_BIN=/home/adam/.cache/selenium/chrome/linux64/150.0.7871.24/chrome
+    Google Chrome for Testing 150.0.7871.24 
+== 2. axe: known 'list' violation MUST fail ==
+  [32mPASS[0m axe violation -> non-zero (exit 1)
+  [32mPASS[0m report contains rule 'list'
+== 3. axe: clean page MUST pass ==
+  [32mPASS[0m axe clean -> zero (exit 0)
+== 4. screenshots @360/768/1024/1440 ==
+  [32mPASS[0m screenshot 360x900
+  [32mPASS[0m screenshot 768x900
+  [32mPASS[0m screenshot 1024x900
+  [32mPASS[0m screenshot 1440x900
+== 5. lighthouse on local file (file:// shimmed via loopback) ==
+  [32mPASS[0m lighthouse -> zero (exit 0)
+  [32mPASS[0m lighthouse JSON report produced
+== 6. lighthouse threshold gate MUST fail below min ==
+  [32mPASS[0m lighthouse below threshold -> non-zero (exit 1)
+== 7. missing Chrome -> clear error, non-zero ==
+  [32mPASS[0m missing chrome -> non-zero (exit 1)
+  [32mPASS[0m error message names the missing binary
+
+----------------------------------------
+RESULT: 13 passed, 0 failed
+artifacts: /home/adam/codeforge/tooling/tests/.artifacts

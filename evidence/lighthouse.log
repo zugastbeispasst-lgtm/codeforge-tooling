@@ -1,0 +1,5 @@
+[browser-check] serving /home/adam/codeforge/tooling/tests/fixtures/clean.html via loopback (http://127.0.0.1:49281/clean.html) — Lighthouse rejects file:// URLs
+[browser-check] lighthouse http://127.0.0.1:49281/clean.html (lighthouse@13.6.0, min score 0.90)
+[browser-check] lighthouse report -> /home/adam/codeforge/tooling/evidence/artifacts/lighthouse-tests-fixtures-clean.html.json
+[browser-check] scores: performance=100 accessibility=91 best-practices=96 seo=90
+[browser-check] OK: lowest category 'seo' = 90 >= threshold 90
