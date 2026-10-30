@@ -13,7 +13,10 @@ HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="$(cd "$HERE/.." && pwd)"
 BC="$ROOT/browser-check.sh"
 FIX="$HERE/fixtures"
-OUT="$HERE/.artifacts"
+# Respect a caller-supplied CODEFORGE_OUT_DIR so the "long out-dir" acceptance
+# case (rework #1, L-008) can be exercised against the same suite:
+#   CODEFORGE_OUT_DIR=/some/very/long/path bash tests/smoke.sh
+OUT="${CODEFORGE_OUT_DIR:-$HERE/.artifacts}"
 export CODEFORGE_OUT_DIR="$OUT"
 rm -rf "$OUT"; mkdir -p "$OUT"
 
