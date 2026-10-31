@@ -10,3 +10,7 @@ evidence/artifacts/
 screenshot-*.png
 axe-*.json
 lighthouse-*.json
+
+# python
+__pycache__/
+*.pyc
